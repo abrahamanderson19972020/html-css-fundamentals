@@ -1,0 +1,56 @@
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 22px;
+}
+.open {
+  border-top: 4px solid #087f5b;
+}
+.open .hidden-box {
+  display: block;
+}
+.number,
+.text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #087f5b;
+}
+
+.number {
+  color: #ced4da;
+}
+
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+
+.hidden-box p {
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: black;
+  font-weight: 500;
+}
+
+.hidden-box ul {
+  display: flex;
+  flex-direction: column;
+  color: #868e96;
+  margin-left: 20px;
+  gap: 5px;
+}
+
+.hidden-box li {
+  gap: 20px;
+}
